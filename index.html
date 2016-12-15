@@ -146,6 +146,82 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-jquery-选择器" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/12/15/jquery-选择器/">JQuery基础——选择器</a>
+    </h1>
+  
+
+        <a href="/2016/12/15/jquery-选择器/" class="archive-article-date">
+  	<time datetime="2016-12-15T06:28:36.834Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-15</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">通过 jQuery，可以选取（查询，query） HTML 元素，并对它们执行“操作”（actions）</div><div class="line"> $(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;)可以简写成$(funtion()&#123;&#125;)</div></pre></td></tr></table></figure>
+<h2 id="jQuery-元素选择器"><a href="#jQuery-元素选择器" class="headerlink" title="jQuery 元素选择器"></a>jQuery 元素选择器</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">jQuery 使用 CSS 选择器来选取 HTML 元素。</div></pre></td></tr></table></figure>
+<ul>
+<li>$(“p”) 选取 <p> 元素。</p></li>
+<li>$(“p.intro”) 选取所有 class=”intro” 的 <p> 元素。</p></li>
+<li>$(“p#demo”) 选取所有 id=”demo” 的 <p> 元素。</p></li>
+</ul>
+<p>向Mac下优秀的markdown编辑器mou致敬</p>
+<h2 id="jQuery-属性选择器"><a href="#jQuery-属性选择器" class="headerlink" title="jQuery 属性选择器"></a>jQuery 属性选择器</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">jQuery 使用 XPath 表达式来选择带有给定属性的元素。</div></pre></td></tr></table></figure>
+<ul>
+<li>$(“[href]”) 选取所有带有 href 属性的元素。</li>
+<li>$(“[href=’#’]”) 选取所有带有 href 值等于 “#” 的元素。</li>
+<li>$(“[href!=’#’]”) 选取所有带有 href 值不等于 “#” 的元素。</li>
+<li>$(“[href$=’.jpg’]”) 选取所有 href 值以 “.jpg” 结尾的元素。</li>
+</ul>
+<h2 id="jQuery-CSS-选择器"><a href="#jQuery-CSS-选择器" class="headerlink" title="jQuery CSS 选择器"></a>jQuery CSS 选择器</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">jQuery CSS 选择器可用于改变 HTML 元素的 CSS 属性。</div><div class="line">下面的例子把所有 p 元素的背景颜色更改为红色：</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">"p"</span>).css(<span class="string">"background-color"</span>,<span class="string">"red"</span>);</div></pre></td></tr></table></figure>
+<ul>
+<li>$(this) 当前 HTML 元素</li>
+<li>$(“p”) 所有 <p> 元素</p></li>
+<li>$(“p.intro”) 所有 class=”intro” 的 <p> 元素</p></li>
+<li>$(“.intro”) 所有 class=”intro” 的元素</li>
+<li>$(“#intro”) id=”intro” 的元素</li>
+<li>$(“ul li:first”) 每个 <ul> 的第一个 <li> 元素</li>
+<li>$(“[href$=’.jpg’]”) 所有带有以 “.jpg” 结尾的属性值的 href 属性</li>
+<li>$(“div#intro .head”) id=”intro” 的 <div> 元素中的所有 class=”head” 的元素</div></li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line"></div><div class="line">--- jquery 的方法写在这个区域中 ----</div><div class="line">这是为了防止文档在完全加载就绪之前运行jquery代码。</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+</li></ul>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/12/15/jquery-选择器/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
     <article id="post-zhangfan" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
